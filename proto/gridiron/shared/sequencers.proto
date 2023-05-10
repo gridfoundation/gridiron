@@ -1,0 +1,10 @@
+syntax = "proto3";
+package gridfoundation.gridiron.shared;
+
+option go_package = "github.com/gridfoundation/gridiron/shared/types";
+
+// Sequencers defines list of sequencers addresses.
+message Sequencers {
+  
+  repeated string addresses = 1; 
+}

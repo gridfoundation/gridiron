@@ -1,0 +1,7 @@
+syntax = "proto3";
+package gridfoundation.gridiron.irc;
+
+option go_package = "github.com/gridfoundation/gridiron/x/irc/types";
+
+// Msg defines the Msg service.
+service Msg {}

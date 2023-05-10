@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package gridfoundation.gridiron.irc;
+
+import "gogoproto/gogo.proto";
+import "gridiron/irc/params.proto";
+import "gridiron/irc/irc_requests.proto";
+
+option go_package = "github.com/gridfoundation/gridiron/x/irc/types";
+
+// GenesisState defines the irc module's genesis state.
+message GenesisState {
+           Params               params          = 1 [(gogoproto.nullable) = false];
+           repeated IRCRequest  IRCRequestList  = 2 [(gogoproto.nullable) = false];
+}
+
